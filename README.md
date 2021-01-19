@@ -4,7 +4,7 @@
 * Implement the construction for `MyVector` class which shall manage heap allocated memory with the following properties:
 
     * When the constructor takes **one** argument, creates a random array with `size` elements, use the function `randInt()` to get the random number.
-    * When the constructor takes **two** arguments, creates a random array with `size` elements, and all elements are initalized with `initialValue`.
+    * When the constructor takes **two** arguments, creates a random array with `size` elements, and all elements are initialized with `initialValue`.
     * When the constructor takes **three** arguments, creates a random array with size elements, and the elements increase from `initalValue` by `spacing`.
 
     ~~~ cpp
@@ -13,7 +13,7 @@
 	MyVector v3(5, 1, 2);       // [1 3 5 7 9 ]
     ~~~
 
-* Implement the copy constructor, assigment operator and destructor to that frees the memory when `MyVector` is deleted.
+* Implement the copy constructor, assignment operator and destructor to that frees the memory when `MyVector` is deleted.
 * Implement the `operator[]` to safely access the elements, and `getSize` to return the size, make sure you cannot modify the elements of the array from these calls
 
 ## Controlled access from non-derived classes
@@ -34,6 +34,9 @@ argument. Make sure all vectors have the same size, otherwise don't do the opera
 * These operations shall now be implemented in a way that they do not need an instance of `MyVectorOperations`. Further, you are not allowed to change properties of your variables in `MyVector` and you are not allowed to add new methods to class `MyVector`.
 
 ## Misc.
-* No additional libraries are required.
-* Git is good
+* No additional libraries are required (please do not use `std::vector`)
+* Git would be nice, but not mandatory
 * Feel free to use any IDE and compiler
+* Our C++ IDE is Visual Studio, if you wish to use it, just run `configure.bat`, make sure you have CMake  in the PATH and [VisualStudio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16). (If you have already another Visual Studio version or compiler, please adjust `configure.bat` accordingly).
+* Questions > jorge.guerra@surgiceye.com.
+

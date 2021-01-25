@@ -7,11 +7,32 @@
 int randInt() { return (rand() % 10 + 1); }
 
 // TODO: Implement constructors
-MyVector::MyVector(int size) {}
+MyVector::MyVector(int size) {
+	m_size = size;
+	int array[size];
+	for(int i=0; i<size; i++){
+    	array[i] = randInt();     
+	}
+	m_data = array;
+}
 
-MyVector::MyVector(int size, int initialValue) {}
+MyVector::MyVector(int size, int initialValue) {
+	m_size = size;
+	int array[size];
+	for(int i=0; i<size; i++){
+    	array[i] = initialValue;     
+	}
+	m_data = array;
+}
 
-MyVector::MyVector(int size, int initialValue, int spacing) {}
+MyVector::MyVector(int size, int initialValue, int spacing) {
+	m_size = size;
+	int array[size];
+	for(int i=0; i<size; i++){
+    	array[i] = initialValue + i*spacing;     
+	}
+	m_data = array;
+}
 
 // TODO: Implement the copy constructor, assignment operator and destructor
 // ///////////////

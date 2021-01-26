@@ -11,9 +11,12 @@ public:
 	MyVector(int size, int initialValue);
 	MyVector(int size, int initialValue, int spacing);
 	// TODO: Implement the copy constructor, assignment operator and destructor
-	MyVector(MyVector &v);
-	MyVector& operator= (const MyVector& a);
-	~MyVector();
+	// copy constructor
+	MyVector(MyVector &v); 
+	// assignment operator
+	MyVector& operator= (const MyVector& a); 
+	// destructor
+	~MyVector(); 
 
 
 	
@@ -24,7 +27,8 @@ public:
 	// TODO: Access member variables safely
 	int operator[](int index);
 	int getSize();
-	void setArray(int array[], MyVector& c);
+	// Reassign the member variable
+	void setArray(int array[]);
 
 private:
 	int* m_data = 0; // TODO: This does not belong here

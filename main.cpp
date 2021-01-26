@@ -25,8 +25,7 @@ int main(int argc, char** argv) {
 		MyVector v(5, 1, 5);
 		// MyVectorOperations::print(v);                      // [1 6 11 16 21 ]
 		MyVectorOperations::print(v, Base::DECIMAL); // [1 6 11 16 21 ]
-		MyVectorOperations::print(
-			v, Base::BINARY); // [00000001 00000110 00001011 00010000 00010101 ]
+		MyVectorOperations::print(v, Base::BINARY); // [00000001 00000110 00001011 00010000 00010101 ]
 		MyVectorOperations::print(v, Base::HEXADECIMAL); // [1 6 b 10 15 ]
 	}
 

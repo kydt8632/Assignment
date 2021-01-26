@@ -11,10 +11,10 @@ public:
 	MyVector(int size, int initialValue);
 	MyVector(int size, int initialValue, int spacing);
 	// TODO: Implement the copy constructor, assignment operator and destructor
-	MyVector(const MyVector &v){
-		m_size = v.m_size
-		m_data = v.m_data
-	};
+	MyVector(MyVector &v);
+	MyVector& operator= (const MyVector& a);
+	~MyVector();
+
 
 	
 	// ///////////////
@@ -24,6 +24,7 @@ public:
 	// TODO: Access member variables safely
 	int operator[](int index);
 	int getSize();
+	void setArray(int array[], MyVector& c);
 
 private:
 	int* m_data = 0; // TODO: This does not belong here
